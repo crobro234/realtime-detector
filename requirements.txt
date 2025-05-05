@@ -1,0 +1,5 @@
+flask
+flask-cors
+opencv-python
+nudenet==2.0.8
+yt-dlp
