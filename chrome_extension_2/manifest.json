@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Nudity Alert",
+  "version": "1.2",
+  "description": "유튜브 영상 클릭 시 10초 후 Nudity Detected 경고창 표시",
+  "permissions": ["scripting", "tabs", "webNavigation"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
