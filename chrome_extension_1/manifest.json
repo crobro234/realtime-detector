@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube URL Logger",
+  "version": "1.0",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ]
+}
